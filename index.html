@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main class="main-class">
+      <section class="left">
+        <p class="message  message-mobile">Start guessing!</p>
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+        <button class="btn reveal">Reveal number</button>
+      </section>
+      <section class="right">
+        <p class="message message-desktop">Start guessing!</p>
+        <p class="label-score">💯 Attempts: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script>
+    if (screen && screen.width > 765){
+      document.write('<script type = "text/javascript" src= "scriptDesktop.js"><\/script>');
+    }
+    </script>
+    <script>
+      if (screen && screen.width < 765){
+        document.write('<script type = "text/javascript" src= "scriptMobile.js"><\/script>');
+      }
+      </script>
+  </body>
+</html>
