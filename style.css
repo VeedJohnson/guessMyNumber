@@ -128,12 +128,13 @@ h1 {
   background-color: #ccc;
 }
 
-.message {
+.msg-mobile,
+.msg-desktop {
   margin-bottom: 8rem;
   height: 3rem;
 }
 
-.message-mobile {
+.msg-mobile {
   display: none;
 }
 
@@ -179,11 +180,11 @@ h1 {
     margin-bottom: 2rem;
   }
 
-  .message-desktop {
+  .msg-desktop {
     display: none;
   }
 
-  .message-mobile {
+  .msg-mobile {
     display: initial;
     font-size: 2rem;
     margin-bottom: 4rem;

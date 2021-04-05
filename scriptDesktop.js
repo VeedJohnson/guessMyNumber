@@ -6,7 +6,7 @@ const secret = () => {
 };
 let  secretNum = secret();
 
-let message = document.querySelector('.message');
+let message = document.querySelector('.msg-desktop');
 let number = document.querySelector('.number');
 let attempt = 20;
 let title  = document.querySelector('.title');

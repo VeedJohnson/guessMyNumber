@@ -16,28 +16,29 @@
     </header>
     <main class="main-class">
       <section class="left">
-        <p class="message  message-mobile">Start guessing!</p>
+        <p class="msg-mobile">Start guessing!</p>
         <input type="number" class="guess" />
         <button class="btn check">Check!</button>
         <button class="btn reveal">Reveal number</button>
       </section>
       <section class="right">
-        <p class="message message-desktop">Start guessing!</p>
+        <p class="msg-desktop">Start guessing!</p>
         <p class="label-score">💯 Attempts: <span class="score">20</span></p>
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore">0</span>
         </p>
       </section>
     </main>
+    
     <script>
-    if (screen && screen.width > 765){
-      document.write('<script type = "text/javascript" src= "scriptDesktop.js"><\/script>');
-    }
+      if (screen && screen.width > 765){
+        document.write('<script type = "text/javascript" src= "scriptDesktop.js"><\/script>');
+      }
     </script>
     <script>
       if (screen && screen.width < 765){
         document.write('<script type = "text/javascript" src= "scriptMobile.js"><\/script>');
       }
-      </script>
+    </script>
   </body>
 </html>
